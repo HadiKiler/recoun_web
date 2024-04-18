@@ -1,0 +1,56 @@
+#content{
+    background-color: #0e1d34;
+}
+#links{
+    background-color: #2d3436;
+    border-radius: 5px;
+}
+#links > a{
+    color: #74b9ff ;
+}
+#whois{
+    color: #badc58;
+    background-color: #2d3436 !important;
+    border-radius: 5px;
+}
+#wappalyzer > div{
+    background-color: #0d42ff;
+}
+
+.loader {
+    z-index: 999;
+    position: fixed ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.692);
+    transition: opacity 0.75s, visibility 0.75s ;
+}
+
+.loader-hiden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after{
+    content: '';
+    width: 20%;
+    height: 20%;
+    border: 15px solid #eeee;
+    border-right-color: blue;
+    border-left-color: blue;
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+    from{
+        transform: rotate(0turn) ;
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
